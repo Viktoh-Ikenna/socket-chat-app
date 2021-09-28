@@ -1,0 +1,170 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.App {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: #2a2730;
+}
+
+.logIn {
+  width: 600px;
+  height: 350px;
+  border: 5px solid #0091ff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logIn input{
+  margin: 10px;
+  width: 200px;
+  height: 40px;
+  border: 2px solid #0091ff;
+  background-color: transparent;
+  padding-left: 10px;
+  color: white;
+  font-size: 15px;
+}
+
+.logIn input:focus{
+  outline: none;
+}
+
+.logIn button{
+
+  width: 200px;
+  height: 50px;
+  border: none;
+  background-color: #0091ff;
+  color: white;
+  font-size: 16px;
+  margin-top: 45px;
+}
+
+.logIn button:hover{
+  cursor: pointer;
+  background-color: #037edc;
+}
+
+.chatContainer {
+  width: 75%;
+  height: 95%;
+  border: 5px solid #0091ff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.messages {
+  width: 100%;
+  padding-left: 20px;
+  overflow: scroll;
+  max-height: 400px;
+}
+
+.chatContainer .messageInputs {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+height: 35px;
+bottom: 0;
+}
+
+.chatContainer .messageInputs input{
+  border: none;
+  border-top: 5px solid #0091ff;
+  padding-left: 20px;
+  font-size: 20px;
+  width:80%
+}
+
+.chatContainer .messageInputs button{
+  flex: 20%;
+  height: 100%;
+  background-color: #0091ff;
+  border: none;
+  color: white;
+  font-size: 18px;
+}
+
+.messageContainer {
+  display: flex;
+  width: calc(100% - 30px);
+  
+}
+
+.messageContainer h1{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+}
+
+#You{
+  justify-content: flex-start;
+}
+
+#Other {
+  justify-content: flex-end;
+}
+
+#Other .messageIndividual {
+  background-color: #5ff064;
+  color: black;
+}
+.messageIndividual {
+  width: 200px;
+  height: 60px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  background-color: #0091ff;
+  opacity: 0.9;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 10px;
+  margin-top: 20px;
+
+}
+
+.popular_container{
+  display:flex;
+  width:100%;
+  height: 100%;
+
+}
+.users{
+  width:25%;
+  height: 95%;
+  border:2px solid #0091ff;
+
+}
+.users >div{
+  display:flex;
+  width:100%;
+  height: 100px;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #353338;
+  cursor: pointer;
+  transition: .2s ease-in-out all;
+}
+.users>div:hover{
+  background-color: #09136b;
+  color:white
+}
+.users>div>span{
+  width:10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #5ff064;
+margin: 0 20px;
+
+}
